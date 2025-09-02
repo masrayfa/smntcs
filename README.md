@@ -2,8 +2,7 @@
 
 > Organize your URLs in folders - inspired by the lack of this feature in Zen Browser
 
-![Rayzen Screenshot](./<img width="701" height="403" alt="image" src="https://github.com/user-attachments/assets/b56fc07a-6cbc-475d-8248-821a36c206fb" />
-)
+![Rayzen Screenshot](<img width="701" height="403" alt="image" src="https://github.com/user-attachments/assets/b56fc07a-6cbc-475d-8248-821a36c206fb" />)
 
 ## 📦 Installation
 
