@@ -71,7 +71,7 @@ export default function BookmarkManager() {
 
       <div class="flex h-full">
         {/* Sidebar */}
-        <div class="w-48 bg-gray-850 border-r border-gray-700 p-4">
+        <div class="w-48 bg-gray-850 border-r border-[#ae9f94] p-4">
           <button class="w-full flex items-center gap-2 text-left  text-[#ae9f94] hover:text-white  hover:bg-[#948275] px-3 py-2 rounded mb-3 cursor-pointer">
             <FiPlus />
             <span class="text-sm">New Group</span>

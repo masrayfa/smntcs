@@ -1,3 +1,4 @@
+import { A } from '@solidjs/router';
 import { FiDownload, FiLink } from 'solid-icons/fi';
 import BookmarkManager from '~/components/BookmarkManager';
 
@@ -23,10 +24,12 @@ export default function Home() {
 
             <button
               class="flex gap-3 items-center text-xl cursor-pointer"
-              onclick={downloadFile}
+              // onclick={downloadFile}
             >
-              <p>Try yourself</p>
-              <FiDownload />
+              <A href="/">
+                <p>Try yourself</p>
+                <FiDownload />
+              </A>
             </button>
 
             <div class="flex gap-3 items-center cursor-pointer hover:underline">
@@ -36,21 +39,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* Footer */}
-      <footer class="flex justify-between items-center px-8 py-4 text-[#ae9f94]">
-        <div>
-          <span>made by Sani Devuong</span>
-        </div>
-        <div class="flex gap-6">
-          <a href="/about" class="hover:text-[#FF7A30] transition font-bold">
-            About
-          </a>
-          <a href="/contact" class="hover:text-[#FF7A30] transition font-bold">
-            Contact
-          </a>
-        </div>
-      </footer>
     </main>
   );
 }
