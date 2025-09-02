@@ -1,8 +1,11 @@
-import { AiOutlineRight } from 'solid-icons/ai';
-import { FiArrowRight, FiDownload, FiLink } from 'solid-icons/fi';
+import { FiDownload, FiLink } from 'solid-icons/fi';
 import BookmarkManager from '~/components/BookmarkManager';
 
 export default function Home() {
+  const downloadFile = () => {
+    window.location.href = '/rayzen_0.1.0_x64_en-US.msi';
+  };
+
   return (
     <main class="flex flex-col h-full">
       <div class="text-[#ae9f94] flex-1 flex justify-center items-center -mt-16">
@@ -18,7 +21,10 @@ export default function Home() {
               <h2 class="text-3xl">of zen browser.</h2>
             </div>
 
-            <button class="flex gap-3 items-center text-xl cursor-pointer">
+            <button
+              class="flex gap-3 items-center text-xl cursor-pointer"
+              onclick={downloadFile}
+            >
               <p>Try yourself</p>
               <FiDownload />
             </button>

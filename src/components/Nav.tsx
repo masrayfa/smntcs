@@ -1,4 +1,8 @@
 export default function Nav() {
+  const downloadFile = () => {
+    window.location.href = '/rayzen_0.1.0_x64_en-US.msi';
+  };
+
   return (
     <nav class="border-b-4 border-[#d3c7bf] z-10">
       <div class="container flex justify-between items-center p-8 text-[#ae9f94] ">
@@ -6,9 +10,12 @@ export default function Nav() {
           <span class="text-xl">SMNTCS</span>
         </div>
         <div class="flex gap-5 ">
-          <a href="/" class="hover:text-[#FF7A30] transition font-bold">
+          <button
+            class="hover:text-[#FF7A30] transition font-bold cursor-pointer"
+            onclick={downloadFile}
+          >
             Download
-          </a>
+          </button>
           <a href="/" class="hover:text-[#FF7A30] transition font-bold">
             Products
           </a>
